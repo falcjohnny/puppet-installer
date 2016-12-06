@@ -18,10 +18,6 @@ fi
 
 error_file=$script_path/logs/configure-puppet.log
 
-#PEAR_RPM_PATH="$script_path/deps"
-#PHPUNIT_PEAR_PACKAGES="$script_path/deps/puppet"
-#PEAR_Functional_Test="pear_status"
-
 program_name="Puppet Installation Tool"
 program_written="- Johnny Wu<johnny.wu@falconstor.com>., 2016\n"
 program_version="1.0"
