@@ -6,7 +6,7 @@
 # @version 1.00
 # @author Johnny Wu <johnny.wu@falconstor.com>., 2016
 #
-script_path="/puppet-installer"
+script_path="/puppet-installer-master"
 
 # include bash commons
 if [ ! -f $script_path/common_functions.sh ]; then
