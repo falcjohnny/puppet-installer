@@ -4,9 +4,6 @@
 #      - This contains common routines required by Bash scripts.
 #
 # @version 1.00
-# @author Johnny Wu <johnny.wu@falconstor.com>., 2016
-#
-
 # ===========================================================
 #  variables
 # ===========================================================
