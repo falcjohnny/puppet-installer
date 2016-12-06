@@ -1,7 +1,7 @@
 # puppet-installer
 Script - Auto installing puppet agent and configuration
 
-## Download the puppet-installer script:
+## Download the puppet-installer script (On your FSS/FMS server):
 ```bash  
   yum install -y git
   cd /
