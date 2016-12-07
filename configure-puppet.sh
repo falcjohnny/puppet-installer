@@ -37,7 +37,7 @@ function install_puppet
     # check if resolv.conf has data
     rm -f /etc/resolv.conf 
     if [ ! -s /etc/resolv.conf ]; then
-        echo "search host.local" >> /etc/resolv.conf
+        echo "search $domain_name" >> /etc/resolv.conf
         echo "nameserver 172.22.6.139" >> /etc/resolv.conf   # ip address of puppet master
     fi
 
