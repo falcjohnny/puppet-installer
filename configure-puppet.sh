@@ -56,7 +56,7 @@ function install_puppet
 
         sleep 5
         echo
-        log "* Installation complete"
+        log "* Puppet Agent Installation complete!"
 
     log "* Configuring puppet configuration and auth file..."
         yes | cp $script_path/puppet.conf /etc/puppet
@@ -69,7 +69,7 @@ function install_puppet
 
     log "* Step 1 : Please go to puppet web console https://$puppetmaster_ip/, browse Infrastructure -> Smart Proxies -> host-puppetmaster.host.local -> Select Action -> Certificates, Selecting your FMS/FSS hostname and click Sign for certificate. "
     log "        Note: Please make sure the time between the Puppet-agent and the Puppetmaster is in sync."
-    log "* Step 2 : Run 'puppet agent -t' on your server" 
+    log "* Step 2 : Run 'puppet agent -t' on your FSS/FMS server" 
 }
 
 # ===========================================================
