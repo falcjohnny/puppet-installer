@@ -67,7 +67,7 @@ function install_puppet
     log "* Starting puppet service..."
         puppet resource service puppet ensure=running enable=true
 
-    log "* Step 1 : Please go to puppet web console https://$puppetmaster_ip/, browse Infrastructure -> Smart Proxies -> host-puppetmaster.host.local -> Select Action -> Certificates, Selecting your FMS/FSS hostname and click Sign for certificate. "
+    log "* Step 1 : Please go to puppet web console https://$puppetmaster_ip/, browse Infrastructure -> Smart Proxies -> host-puppetmaster.host.local -> Select Action -> Certificates, finding your FMS/FSS hostname and click Sign for certificate. "
     log "        Note: Please make sure the time between the Puppet-agent and the Puppetmaster is in sync."
     log "* Step 2 : Run 'puppet agent -t' on your FSS/FMS server" 
 }
