@@ -9,7 +9,7 @@
 # ===========================================================
 short_hostname=`hostname -s`
 domain_name="host.local"
-arch=`uname -p`
+puppetmaster_ip=`172.22.6.139`
 
 program_name="Please override program_name"
 program_written="Please override program_written"
@@ -21,8 +21,6 @@ error_file="set_me_please.log"
 
 debug=0
 hide_output=">$error_file 2>&1"
-
-perl=`which perl`
 
 # ===========================================================
 #  functions
