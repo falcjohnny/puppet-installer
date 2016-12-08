@@ -9,7 +9,7 @@
 # ===========================================================
 short_hostname=`hostname -s`
 domain_name="host.local"
-puppetmaster_ip=`172.22.6.139`
+puppetmaster_ip="172.22.6.139"
 
 program_name="Please override program_name"
 program_written="Please override program_written"
