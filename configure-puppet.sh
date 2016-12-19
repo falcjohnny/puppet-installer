@@ -70,6 +70,7 @@ function install_puppet
     log "* Copy SSH RSA Public Key to Puppet master for passwordless login..."
         ssh-keyscan -H $puppetmaster_ip >> /root/.ssh/known_hosts
         ssh-copy-id -i /root/.ssh/id_rsa.pub $puppetmaster_ip
+        #Based on the security, do not put the puppetmaster password on github with below commented method.
 #/usr/bin/expect <<EOD
 #spawn ssh-copy-id -i /root/.ssh/id_rsa.pub $puppetmaster_ip
 #expect "*password:*"
